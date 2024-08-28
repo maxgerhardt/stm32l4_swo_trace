@@ -24,11 +24,11 @@ void setup_trace() {
     ITMOptions itm;
     itm.EnabledStimulusPorts = 0xffffffff;
     itm.EnableLocalTimestamp = false;
-    itm.EnableSyncPacket = true;
+    itm.EnableSyncPacket = false; // needs or doesn't need "-n" switch for orbtools
     itm.ForwardDWT = true; // must be ON for PC sampling
     itm.GlobalTimestampFrequency = ITMGlobalTimestampFrequencyDisabled;
     itm.LocalTimestampPrescaler = ITMLocalTimestampPrescalerDivideBy64;
-    itm.TraceBusID = 0; // irrelevant, only used when formatter is on
+    itm.TraceBusID = 1; // irrelevant, only used when formatter is on
     DWTOptions dwt;
     dwt.CPICounterEvent = false;
     dwt.CycleTap = DWTCycleTap6; // every 2^6 = 64 cycles, measure PC
