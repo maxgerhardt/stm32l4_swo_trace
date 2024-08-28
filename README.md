@@ -6,7 +6,7 @@
 * https://github.com/orbcode/orbuculum/actions/workflows/build-windows.yml
 * https://orbcode.org/orbuculum/
 * https://developer.arm.com/documentation/ddi0403/d/Debug-Architecture/ARMv7-M-Debug/The-Data-Watchpoint-and-Trace-unit/Control-register--DWT-CTRL?lang=en
-* 
+* https://interrupt.memfault.com/blog/profiling-firmware-on-cortex-m
 
 ## What is this?
 
